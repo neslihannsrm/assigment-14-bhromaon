@@ -1,4 +1,4 @@
-/*navigation*/
+/* Navigation */
 .navigation {
   width: 100%;
   display: flex;
@@ -36,6 +36,79 @@
 }
 .nav-list li a:hover {
   text-decoration: underline;
+}
+
+.about-section {
+  background-image: url(/images/whychooseus-background.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.about-container {
+  max-width: 100%;
+  margin: 80 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.about-title {
+  font-family: "Aleo" sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.about-parafgraph {
+  font-family: "josefin sans";
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.about-parafgraph p {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.discover-button {
+  background-color: #496BFE;
+  color: #FFFFFF;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 16px;
+  font-family: "Aleo" sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.discover-button:hover {
+  background-color: #496BFE;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(75, 114, 230, 0.3);
+}
+
+.about-images {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-images img {
+  max-width: 100%;
+  height: auto;
+}
+.about-images .bottom-image {
+  margin-left: 3rem;
 }
 
 * {
