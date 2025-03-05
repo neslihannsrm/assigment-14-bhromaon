@@ -127,5 +127,55 @@
     
   }
   
+  /* Find Pick Reserve */
  
+  .process-section {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.process-container {
+    display: flex;
+    gap: 5%;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.step-box i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #5474FD;
+}
+
+.step-title {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: 'Aleo' sans-serif;
+    text-align: center;
+    justify-content: space-around;
+}
+.icon-blue {
+  color: #5474FD; 
+  font-size: 50px;
+}
+.icon-red {
+  color: #FF6363; 
+  font-size: 50px; 
+}
+.process-box {
   
+  gap: 20px; 
+  .find-step,
+  .pick-step,
+  .reserve-spot{
+      flex: 20;  
+  }
+}
