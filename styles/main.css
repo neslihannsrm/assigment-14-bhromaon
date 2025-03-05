@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+
+.landing-page {
+  background-image: url("/images/landing-page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+}
+.landing-page .landing-page-container {
+  list-style: none;
+}
+.landing-page .landing-page-title {
+  font-weight: bold;
+  font-size: 48px;
+  font-family: "Josefin sans";
+  letter-spacing: 5px;
+}
+.landing-page .landing-page-text {
+  font-size: 20px;
+  font-family: "Josefin sans";
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+.landing-page .search-container {
+  width: 600px;
+  height: 60px;
+  background-color: #FFFFFF;
+  text-align: center;
+  border: none;
+  outline: none;
+  margin: 70px;
+}
+.landing-page .search-container form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.landing-page .search-container input {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  outline: none;
+  border: none;
+}
+.landing-page .search-container .search-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  background-color: #5474FD;
+  padding: 10px 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.landing-page .search-container .search-button i {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.landing-page .search-container .search-button:hover {
+  color: #496BFE;
+  background-color: #060c29;
+}
+.landing-page .search-container .search-button .fa-sharp-duotone {
+  justify-content: flex-end;
+}
+.landing-page .scroll-down {
+  margin-top: 20%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page .scroll-down i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.header .navigation {
+  align-content: end;
+}/*# sourceMappingURL=main.css.map */

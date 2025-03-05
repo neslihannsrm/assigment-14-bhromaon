@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0; 
+  }
+  
+  .landing-page {
+    background-image: url('/images/landing-page.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+  
+    .landing-page-container {
+      list-style: none;
+    }
+  
+    .landing-page-title {
+      font-weight: bold;
+      font-size: 48px;
+      font-family: 'Josefin sans';
+      letter-spacing: 5px;
+    }
+  
+    .landing-page-text {
+      font-size: 20px;
+      font-family: 'Josefin sans';
+      letter-spacing: 10px;
+      font-weight: normal;
+    }
+  
+    .search-container {
+    
+      width: 600px;
+      height: 60px;
+      background-color: #FFFFFF;
+      text-align: center;
+      border: none;
+      outline: none;
+      margin: 70px;
+
+
+      form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+  
+      input {
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        outline: none;
+        border: none;
+      }
+  
+      .search-button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 180px;
+        height: 60px;
+        color: #FFFFFF;
+        background-color: #5474FD;
+        padding: 10px 50px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        i {
+            margin-left: 10px; 
+            font-size: 12px; 
+          }
+        
+  
+        &:hover {
+          color: #496BFE;
+          background-color: #060c29;
+        }
+
+        .fa-sharp-duotone {
+            justify-content: flex-end;
+        }
+      }
+    }
+  
+    .scroll-down {
+        margin-top: 20%;
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+      
+        i {
+          font-size: 20px;  
+          margin-top: 10px; 
+        }
+
+      }
+    
+  }
+  
+  .header {
+    .navigation {
+      align-content: end;
+    }
+  }
+  
