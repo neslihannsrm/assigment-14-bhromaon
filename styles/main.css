@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Navigation */
 .navigation {
   width: 100%;
@@ -476,4 +477,97 @@ body {
 .social-list i {
   font-size: 20px;
   transition: color 0.3s ease;
+}
+
+/* Küçük Tablet ve Büyük Telefonlar (600px ve altı) */
+@media (max-width: 600px) {
+  .landing-page-title {
+    font-size: 20px;
+  }
+  .landing-page-text {
+    font-size: 14px;
+  }
+  .search-container input {
+    width: 90%;
+    font-size: 14px;
+  }
+  .search-button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .process-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Küçük Telefonlar (320px ve altı) */
+@media (max-width: 320px) {
+  .landing-page-title {
+    font-size: 18px;
+  }
+  .landing-page-text {
+    font-size: 12px;
+  }
+  .search-container input {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .search-button {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .about-title {
+    font-size: 20px;
+  }
+  .about-paragraph-p {
+    font-size: 12px;
+  }
+  .destination-container {
+    text-align: center;
+    padding: 15px;
+  }
+  .action-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .footer-container {
+    text-align: center;
+  }
+  .social-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
 }/*# sourceMappingURL=main.css.map */
