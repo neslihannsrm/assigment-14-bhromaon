@@ -1,6 +1,15 @@
 @use 'nav';
 @use 'info';
 
+body {
+  display: grid;
+  grid-template-rows: 1fr auto; 
+}
+
+footer {
+  margin-top: 0; 
+}
+
 
 
 * {
@@ -39,13 +48,13 @@
     .landing-page-title {
       font-weight: bold;
       font-size: 48px;
-      font-family: 'Josefin sans';
+      font-family: 'Aleo', sans-serif;
       letter-spacing: 5px;
     }
   
     .landing-page-text {
       font-size: 20px;
-      font-family: 'Josefin sans';
+      font-family: 'Aleo', sans-serif;
       letter-spacing: 10px;
       font-weight: normal;
     }
@@ -136,7 +145,15 @@
     align-items: center;
     height: 300px;
 }
+.process-section p{
+  color: #FFFFFF;
+  font-family: 'Aleo', sans-serif;
+  line-height: 26px;
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: 300;
 
+}
 .process-container {
     display: flex;
     gap: 5%;
@@ -145,7 +162,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 
 .step-box i {
@@ -176,6 +192,210 @@
   .find-step,
   .pick-step,
   .reserve-spot{
-      flex: 20;  
+      flex: 20;
+      justify-content: center;
+      align-items: center;  
   }
+}
+
+
+
+/* Grand Section */
+.grand-section {
+  background-image: url(/images/house-background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.grand-section-2 {
+  background-image: url(/images/mountain-background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+
+.destination-container {
+  width: 543px;
+  height: 374px;
+  background-color: #232323;
+  color: #FFFFFF;
+  line-height: 1.8;
+  text-align: start;
+  padding: 30px;
+  opacity: 0.8;
+  font-family:'Josefin sans', sans-serif;
+
+  
+  .destination-country {
+    font-size: 20px;
+    font-family:'Josefin sans', sans-serif;
+  }
+
+  
+  .destination-title {
+    font-size: 20px;
+    font-family:'Josefin sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  
+  .destination-description {
+    font-size: 16px;
+    font-family:'Josefin sans', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  
+  .action-btn {
+    width: 228px;
+    height: 63px;
+    background-color: #496BFE;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family:'Josefin sans', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5474FD;
+      color: black;
+      border: solid rgb(44, 44, 121);
+    }
+  }
+}
+
+/* Alt Layout */
+.alt-layout {
+  margin-left: 50%;
+}
+
+/* Tourits Review Section*/
+
+.review-section{
+  background-image: url(/images/feedback-background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 941px;
+  justify-content: center;
+  align-items: center;
+  display: flex;  
+  margin: 0;
+  background-size: contain;
+  
+}
+
+.review-container{
+  font-family:'Josefin sans', sans-serif;
+  font-weight: 300;
+  text-align: center;  
+  color: #FFFFFF;
+}
+
+.review-container-h2{
+  margin-top: 0;
+  font-size: 36px;
+  margin-left: 10%;
+  margin-bottom: 60px;
+  font-family: 'Aleo', sans-serif;
+  font-weight: 300;
+}
+
+.quote-box{
+  max-width:100%;
+  width: 570px;
+  height: 284px;
+  background-color: #333333;
+  line-height: 1.2;
+}
+
+.review-content{
+  display: flex;
+  justify-content: start;
+  text-align: start; 
+     
+}
+
+.traveler-name{
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Josefin sans', sans-serif;
+}
+
+.review-text p{
+  font-size: 20px;
+  padding: 1%;
+  word-spacing: 2px;
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+.fa-quote-left{
+  font-size: 35px;
+  color: #5474FD;
+}
+
+
+
+/* Footer Section */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  color: #FFFFFF;
+  font-family: 'Josefin sans', sans-serif;
+  background-size: contain;
+  margin: 0;
+}
+
+.footer-box {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-brand {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.social-list li {
+  cursor: pointer;
+}
+
+.social-list i {
+  font-size: 20px;
+  transition: color 0.3s ease;
 }

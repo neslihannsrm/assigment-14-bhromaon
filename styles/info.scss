@@ -1,3 +1,4 @@
+
 .about-section {
     background-image: url(/images/whychooseus-background.jpg);
     background-repeat: no-repeat;
@@ -8,40 +9,43 @@
     align-items: center;
     background-size: cover;
 }
+
 .about-container {
     max-width: 100%;
-    margin: 80 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
+
 
 .about-text {
     flex: 1;
     max-width: 550px;
+    color: #FFFFFF;
 }
 
+
 .about-title {
-    font-family: 'Aleo' sans-serif;
+    font-family: 'Aleo', sans-serif; 
+    font-weight: 300;
     font-size: 36px;
     color: #FFFFFF;
     margin-bottom: 2rem;
-
 }
 
-.about-parafgraph {
-    font-family: 'josefin sans';
-    font-size: 16px;
-    line-height: 1.6;
+
+.about-paragraph, .about-paragraph-p {
+    font-family: 'Josefin Sans', sans-serif;
     color: #ffffff;
-
-
-    p {
-        margin-bottom: 1.5rem;
-        color: #ffffff;
-    }
 }
+
+.about-paragraph-p {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
 
 .discover-button {
     background-color: #496BFE; 
@@ -49,30 +53,34 @@
     border: none;
     padding: 1rem 2.5rem;
     font-size: 16px;
-    font-family: 'Aleo' sans-serif;
+    font-family: 'Aleo', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-
+    margin-top: 25px;
+    
     &:hover {
         background-color: #496BFE;
-        transform: translateY(-2px);
         box-shadow: 0 4px 15px rgba(75, 114, 230, 0.3);
     }
 }
 
-.about-images{
-    flex: 1;
-    max-width: 500px;
+
+.about-images {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    margin: 60px;
+    gap: 40px;
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .first-image {
+       width: 350px;
+       height: 220px;
+       
     }
 
-    .bottom-image {
-        margin-left: 3rem;
+    .second-image {
+        margin-left: 150px;
+        width: 350px;
+        height: 220px;
+        
     }
 }

@@ -11,7 +11,7 @@
     max-width: 1773px;
     height: 83px;
     display: flex;
-    justify-content: space-between;  // İki öğe arasında eşit boşluk
+    justify-content: space-between;  
     align-items: center;
     padding: 0 20px;
 }
@@ -27,7 +27,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;  // Elemanlar arasındaki boşluğu ayarlamak için gap kullanıyoruz
+    gap: 2rem;  
 
     li {
         a {

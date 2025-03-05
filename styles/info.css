@@ -11,7 +11,6 @@
 
 .about-container {
   max-width: 100%;
-  margin: 80 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,24 +19,27 @@
 .about-text {
   flex: 1;
   max-width: 550px;
+  color: #FFFFFF;
 }
 
 .about-title {
-  font-family: "Aleo" sans-serif;
+  font-family: "Aleo", sans-serif;
+  font-weight: 300;
   font-size: 36px;
   color: #FFFFFF;
   margin-bottom: 2rem;
 }
 
-.about-parafgraph {
-  font-family: "josefin sans";
-  font-size: 16px;
-  line-height: 1.6;
+.about-paragraph, .about-paragraph-p {
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
 }
-.about-parafgraph p {
+
+.about-paragraph-p {
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
 }
 
 .discover-button {
@@ -46,27 +48,28 @@
   border: none;
   padding: 1rem 2.5rem;
   font-size: 16px;
-  font-family: "Aleo" sans-serif;
+  font-family: "Aleo", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 25px;
 }
 .discover-button:hover {
   background-color: #496BFE;
-  transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(75, 114, 230, 0.3);
 }
 
 .about-images {
-  flex: 1;
-  max-width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  margin: 60px;
+  gap: 40px;
 }
-.about-images img {
-  max-width: 100%;
-  height: auto;
+.about-images .first-image {
+  width: 350px;
+  height: 220px;
 }
-.about-images .bottom-image {
-  margin-left: 3rem;
-}/*# sourceMappingURL=info.css.map */
+.about-images .second-image {
+  margin-left: 150px;
+  width: 350px;
+  height: 220px;
+}
